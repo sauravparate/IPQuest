@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background"
+    android:weightSum="1">
+
+    <!-- IP Name EditText -->
+    <TextView
+        android:id="@+id/ipNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP Name"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/ipNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter IP Name"
+        android:padding="16dp"
+        android:background="@drawable/edittext_rounded"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Enter the name of the IP" />
+
+    <!-- IP Type Spinner -->
+    <TextView
+        android:id="@+id/ipTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP Type"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/ipTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:contentDescription="IP Type selection dropdown"
+        android:popupBackground="@drawable/spinner_dropdown" />
+
+    <!-- IP Description EditText -->
+    <TextView
+        android:id="@+id/ipDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP Description"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/ipDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Enter Description"
+        android:padding="16dp"
+        android:background="@drawable/edittext_rounded"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:importantForAccessibility="yes"
+        android:contentDescription="IP Description input field"
+        android:gravity="top|start" />
+
+    <!-- Set Deadline Button -->
+    <Button
+        android:id="@+id/deadlineButton"
+        android:layout_width="match_parent"
+        android:text="Set Deadline"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Set the deadline for the IP" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:text="Save IP"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Save the entered IP" />
+</LinearLayout>
